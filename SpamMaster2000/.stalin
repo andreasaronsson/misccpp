@@ -1,0 +1,10 @@
+<?xml version="SpamMaster2000 build 2004/stalin">
+<key>name</key><string>Jaff</string>
+<key>address</key><string>jaffpop@skip.informatik.gu.se</string>
+<key>pop</key><string>picard.skip.informatik.gu.se</string>
+<key>popUser</key><string>jaffpop</string>
+<key>popPass</key><string>bapp123</string>
+<key>smtp</key><string>picard.skip.informatik.gu.se</string>
+<key>smtpUser</key><string></string>
+<key>smtpPass</key><string></string>
+<key>signature</key><string>/Joakim, Andreas, Franz och Fredrik</string>

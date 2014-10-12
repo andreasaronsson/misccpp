@@ -1,0 +1,83 @@
+// -*- c++ -*-
+
+#ifndef INCLUDE_ECCO_RUNNABLE_H
+#define INCLUDE_ECCO_RUNNABLE_H
+
+namespace ecco {
+class Runnable;
+}
+
+#include <ecco/Thread.h>
+
+namespace ecco {
+/**
+ * \brief Base class for all objects designated to be executed by a thread.
+ *
+ * The Runnable abstract class should be implemented by any class whose
+ * instances are intended to be executed by a thread. The class must define
+ * the Run() method.
+ *
+ * This abstract class is designed to provide a common protocol for objects
+ * that wish to execute code while they are active. For example, Runnable is
+ * implemented by class Thread. Being active simply means that a thread has
+ * been started and has not yet been stopped.
+ *
+ * In addition, Runnable provides the means for a class to be active while
+ * not subclassing Thread. A class that implements Runnable can run without
+ * subclassing Thread by instantiating a Thread instance and passing itself
+ * in as the target. In most cases, the Runnable abstract class should be
+ * used if you are only planning to override the run() method and no other
+ * Thread methods. This is important because classes should not be subclassed
+ * unless the programmer intends on modifying or enhancing the fundamental
+ * behavior of the class.
+ */
+class Runnable
+{
+friend class Thread;
+public:
+    /**
+     * \brief Create a new Runnable object.
+     *
+     * Create a new Runnable object.
+     */
+    Runnable() : m_Running(false), m_Stopped(false) {}
+
+    /**
+     * \brief Runnable destructor.
+     *
+     * Runnable destructor.
+     */
+    virtual ~Runnable(){}
+
+    /**
+     * \brief Abstract method called by threads when it's time to do some good.
+     *
+     * Abstract method called by threads when it's time to do some good. This
+     * method should implement all the things you want to happen in a separate thread.
+     *
+     * @param currentThread  the thread calling this method.
+     */
+    virtual void Run(Thread *currentThread) = 0;
+
+protected:
+    /**
+     * \brief True while the object should continue to work.
+     *
+     * True while the runnable object should continue to perform the work that
+     * it is currently doing. This is strictly a read-only flag, and should be
+     * checked with regular intervals to see if there is someone who wants you
+     * to stop the sillyness and do something considerably less silly.
+     */
+    bool m_Running;
+
+    /**
+     * \brief Set to true when the thread method Run() has stopped.
+     *
+     * This flag will automagically be set to true when the Run() method has
+     * been called by a thread, and the object has exited fomr that method.
+     */
+    bool m_Stopped;
+};
+}
+
+#endif // Header guard

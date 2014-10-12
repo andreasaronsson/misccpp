@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>4.2</string>
+	<key>Music Folder</key><string>file://localhost/Users/lennart/Music/iTunes/iTunes%20Music/</string>
+	<key>Tracks</key>
+	<dict>
+		<key>33</key>
+		<dict>
+			<key>Track ID</key><integer>33</integer>
+			<key>Name</key><string>A Thousand Beautiful Things</string>
+			<key>Artist</key><string>Annie Lennox</string>
+			<key>Composer</key><string>Annie Lennox</string>
+			<key>Album</key><string>Bare</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5994919</integer>
+			<key>Total Time</key><integer>187271</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>11</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2003-10-25T15:36:50Z</date>
+			<key>Date Added</key><date>2003-10-25T08:56:54Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>-1140289982</integer>
+			<key>Play Date UTC</key><date>2003-12-19T10:15:14Z</date>
+			<key>File Type</key><integer>1297106739</integer>
+			<key>File Creator</key><integer>1752133483</integer>
+			<key>Location</key><string>file://localhost/Users/lennart/Music/iTunes/iTunes%20Music/Annie%20Lennox/Bare/01%20A%20Thousand%20Beautiful%20Things.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

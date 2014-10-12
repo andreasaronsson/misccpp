@@ -1,0 +1,23 @@
+<addressbook>
+    <contact>
+        <name>
+            <first>Anders</first>
+            <last>Andersson</last>
+        </name>
+        <email>anders@andersson.se</email>
+    </contact>
+    <contact>
+        <name>
+            <first>Franz</first>
+            <last>Franzzon</last>
+        </name>
+        <email>fra@nz.se</email>
+    </contact>
+    <contact>
+        <name>
+            <first>Hejsan</first>
+            <last>På</last>
+        </name>
+        <email>a@b.c</email>
+    </contact>
+</addressbook>

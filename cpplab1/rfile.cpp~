@@ -1,0 +1,74 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <iterator>
+#include "song.h"
+
+using namespace std;
+
+
+
+
+
+
+
+
+int main(int argc, char **argv) 
+{
+  setlocale(LC_ALL,"sv_SE");
+  string raw, bit, d="<dict>", k="<key>", dq="</dict>", kq="</key>";
+  int ndict=0;
+  Albums albums;
+  Song *song;
+  vector<string> v;
+  vector<Song*> s;
+  vector<Album*> al;
+
+  ifstream inFile("test", ios::in);
+
+  while( getline(inFile, raw) ) {
+    if(string::npos != raw.find(d)) {
+      ++ndict;
+    }
+    song = new Song;
+    while ( ndict==3 ) {
+      getline(inFile, raw);
+      if ( string::npos != raw.find(k) ) {
+        size_t current = 0 , next = 0;
+        while ( current != string::npos ) {
+	  next = raw.find( '>', current );
+	  current = raw.find( '<', next );
+	  if ( 0 != current-next-1  && current != string::npos ) 
+	    v.push_back( string( raw , next+1 , current-next-1 ) );
+	  current = (next == string::npos) ? string::npos : next + 1 ;
+	}
+	song.setvalue(v.front(),v.back());
+	v.clear();
+      }
+      if ( string::npos != raw.find(dq) ) {
+	getline(inFile, raw);
+	ndict--;
+	//push object 
+	s.push_back(song);
+	albums.import(song);
+      }
+    }
+
+    if ( string::npos != raw.find(dq) ) {
+      ndict--;
+    }
+    
+  }
+  inFile.close();
+
+  cout << s.size() << " låtar i vektorn. Kapacitet: " << s.capacity() << endl;
+  
+  for (i=0; i<albums.albums.size(); i++)
+    {
+      cout << albums.albums[i]->get_year() << " " << albums.albums[i]->get_artist()<< " "<< albums.albums[i]->get_album() << endl;
+    }
+
+
+  return 0;
+
+}

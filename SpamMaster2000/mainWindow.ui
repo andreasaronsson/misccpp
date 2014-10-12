@@ -1,0 +1,749 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>spamMaster2000</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>spamMaster2000</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>786</width>
+            <height>795</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Spam Master 2000</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QWidgetStack">
+            <property name="name">
+                <cstring>widgetStack1</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout6</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget">
+                                <property name="name">
+                                    <cstring>layout9</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QPushButton" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>deletePushButton</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Delete</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+D</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton" row="1" column="1">
+                                        <property name="name">
+                                            <cstring>replyPushButton</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Reply</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+R</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>writePushButton</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&amp;Write</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+W</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox" row="1" column="3">
+                                        <property name="name">
+                                            <cstring>moveToComboBox</cstring>
+                                        </property>
+                                    </widget>
+                                    <widget class="QComboBox" row="1" column="2">
+                                        <property name="name">
+                                            <cstring>viewMailboxComboBox</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>0</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>viewMailTextLabel</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>View mailbox:</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignBottom|AlignHCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>movetoTextLabel</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Move to: </string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignBottom|AlignHCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QPushButton" row="0" column="1">
+                                        <property name="name">
+                                            <cstring>forwardPushButton</cstring>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>70</width>
+                                                <height>35</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>F&amp;orward</string>
+                                        </property>
+                                        <property name="accel">
+                                            <string>Alt+O</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>HeaderPushButton</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>125</width>
+                                        <height>26</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>125</width>
+                                        <height>26</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Headers On</string>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer1</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>120</width>
+                                        <height>41</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>stalinPixmapLabel</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>70</width>
+                                        <height>70</height>
+                                    </size>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>70</width>
+                                        <height>70</height>
+                                    </size>
+                                </property>
+                                <property name="pixmap">
+                                    <pixmap>stalin_klar.jpg</pixmap>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="Line">
+                        <property name="name">
+                            <cstring>line1</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <widget class="QListView">
+                        <column>
+                            <property name="text">
+                                <string>Date</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Name</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Subject</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>mailListView</cstring>
+                        </property>
+                        <property name="resizeMode">
+                            <enum>AllColumns</enum>
+                        </property>
+                    </widget>
+                    <widget class="Line">
+                        <property name="name">
+                            <cstring>line2</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <widget class="QProgressBar">
+                        <property name="name">
+                            <cstring>progressBar1</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout11</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="3" column="1">
+                                <property name="name">
+                                    <cstring>subjectLineEdit</cstring>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>230</red>
+                                        <green>230</green>
+                                        <blue>230</blue>
+                                    </color>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1">
+                                <property name="name">
+                                    <cstring>toLineEdit</cstring>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>230</red>
+                                        <green>230</green>
+                                        <blue>230</blue>
+                                    </color>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="0">
+                                <property name="name">
+                                    <cstring>fromTextLabel</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>From:</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit5</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>subjectTextLabel</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Subject:</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit7</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>dateLineEdit</cstring>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>230</red>
+                                        <green>230</green>
+                                        <blue>230</blue>
+                                    </color>
+                                </property>
+                                <property name="dragEnabled">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="1" column="1">
+                                <property name="name">
+                                    <cstring>fromLineEdit</cstring>
+                                </property>
+                                <property name="paletteBackgroundColor">
+                                    <color>
+                                        <red>230</red>
+                                        <green>230</green>
+                                        <blue>230</blue>
+                                    </color>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>toTextLabel</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>To:</string>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit6</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>dateTextLabel</cstring>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>100</width>
+                                        <height>0</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Date:</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+        <widget class="QWidgetStack">
+            <property name="name">
+                <cstring>widgetStack2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTextBrowser">
+                        <property name="name">
+                            <cstring>mailBodyTextBrowser</cstring>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </vbox>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <item text="&amp;File" name="File">
+        <action name="fileNewAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileExitAction"/>
+        <action name="fileFetch_mailAction"/>
+        <action name="fileAdressbookAction"/>
+    </item>
+    <separator/>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>New</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;New mailbox</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileFetch_mailAction</cstring>
+        </property>
+        <property name="text">
+            <string>Fetch mail</string>
+        </property>
+        <property name="menuText">
+            <string>Fetch mail</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileAdressbookAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;Adressbook</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Adressbook</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filenew_itemAction</cstring>
+        </property>
+        <property name="text">
+            <string>new item</string>
+        </property>
+        <property name="menuText">
+            <string>new item</string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>writePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>writeButtonPushed()</slot>
+    </connection>
+    <connection>
+        <sender>fileNewAction</sender>
+        <signal>activated()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>newMailboxDialogSlot()</slot>
+    </connection>
+    <connection>
+        <sender>fileFetch_mailAction</sender>
+        <signal>activated()</signal>
+        <receiver>mailListView</receiver>
+        <slot>triggerUpdate()</slot>
+    </connection>
+    <connection>
+        <sender>mailListView</sender>
+        <signal>clicked(QListViewItem*,const QPoint&amp;,int)</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>mailDoubleClickedSlot()</slot>
+    </connection>
+    <connection>
+        <sender>viewMailboxComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>viewedMailboxComboboxl()</slot>
+    </connection>
+    <connection>
+        <sender>forwardPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>forwardButtonPushed()</slot>
+    </connection>
+    <connection>
+        <sender>mailListView</sender>
+        <signal>selectionChanged()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>titleClicked()</slot>
+    </connection>
+    <connection>
+        <sender>moveToComboBox</sender>
+        <signal>activated(int)</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>moveToMailboxSlot()</slot>
+    </connection>
+    <connection>
+        <sender>deletePushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>deleteMail()</slot>
+    </connection>
+    <connection>
+        <sender>replyPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>replyButtonPushed()</slot>
+    </connection>
+    <connection>
+        <sender>fileFetch_mailAction</sender>
+        <signal>activated()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>fetchMailSlot()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>saveMailDialogSlot()</slot>
+    </connection>
+    <connection>
+        <sender>fileAdressbookAction</sender>
+        <signal>activated()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>adressBookSlot()</slot>
+    </connection>
+    <connection>
+        <sender>HeaderPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>spamMaster2000</receiver>
+        <slot>headersSlot()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>writePushButton</tabstop>
+    <tabstop>forwardPushButton</tabstop>
+    <tabstop>mailListView</tabstop>
+    <tabstop>dateLineEdit</tabstop>
+    <tabstop>fromLineEdit</tabstop>
+    <tabstop>toLineEdit</tabstop>
+    <tabstop>subjectLineEdit</tabstop>
+    <tabstop>mailBodyTextBrowser</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="local" impldecl="in declaration">contact.h</include>
+    <include location="local" impldecl="in declaration">mail.h</include>
+    <include location="local" impldecl="in declaration">mailbox.h</include>
+    <include location="local" impldecl="in declaration">smtp.h</include>
+    <include location="local" impldecl="in implementation">sendmailform.h</include>
+    <include location="local" impldecl="in implementation">qdialog.h</include>
+    <include location="local" impldecl="in implementation">qlineedit.h</include>
+    <include location="local" impldecl="in implementation">qlabel.h</include>
+    <include location="global" impldecl="in implementation">iostream</include>
+    <include location="local" impldecl="in implementation">newmailboxdialog.h</include>
+    <include location="local" impldecl="in implementation">mailboxes.h</include>
+    <include location="local" impldecl="in implementation">mailbox.h</include>
+    <include location="local" impldecl="in implementation">qvaluelist.h</include>
+    <include location="local" impldecl="in implementation">qstringlist.h</include>
+    <include location="global" impldecl="in implementation">string</include>
+    <include location="local" impldecl="in implementation">pop.h</include>
+    <include location="local" impldecl="in implementation">qlistview.h</include>
+    <include location="local" impldecl="in implementation">savemail.h</include>
+    <include location="local" impldecl="in implementation">abookform.h</include>
+    <include location="local" impldecl="in implementation">addcontact.h</include>
+    <include location="local" impldecl="in implementation">abook.h</include>
+    <include location="local" impldecl="in implementation">contact.h</include>
+    <include location="global" impldecl="in implementation">vector</include>
+    <include location="local" impldecl="in implementation">qmessagebox.h</include>
+    <include location="local" impldecl="in implementation">prefs.h</include>
+    <include location="local" impldecl="in implementation">mainWindow.ui.h</include>
+</includes>
+<variables>
+    <variable>QDialog *newAdressBook;</variable>
+    <variable>QDialog *newMailsave;</variable>
+    <variable access="private">QValueList&lt;const std::list&lt;std::string&gt; &gt; *allBoxesValueList;</variable>
+    <variable>QDialog* newMailbox;</variable>
+    <variable>QDialog *newMail;</variable>
+    <variable access="private">QStringList allBoxesStringList;</variable>
+    <variable access="public">QString signature;</variable>
+</variables>
+<signals>
+    <signal>forwardDetails()</signal>
+    <signal>sendAdressBook(vector&lt;Contact*&gt;&amp;)</signal>
+    <signal>forwardButtonClicked( Mail&amp;, Mailbox&amp;, Smtp&amp;, vector &lt;Contact*&gt; &amp; )</signal>
+    <signal>replyButtonClicked( Mail&amp;, Mailbox&amp;, Smtp&amp;, vector &lt;Contact*&gt; &amp; )</signal>
+    <signal>newButtonClicked( Mailbox&amp;,Smtp&amp;, vector &lt;Contact*&gt; &amp;, QString)</signal>
+</signals>
+<slots>
+    <slot>writeButtonPushed()</slot>
+    <slot>mailDoubleClickedSlot()</slot>
+    <slot>newMailboxDialogSlot()</slot>
+    <slot>viewedMailboxComboboxl()</slot>
+    <slot>forwardButtonPushed()</slot>
+    <slot>titleClicked()</slot>
+    <slot>moveToMailboxSlot()</slot>
+    <slot>deleteMail()</slot>
+    <slot>refreshMainWindow()</slot>
+    <slot>replyButtonPushed()</slot>
+    <slot>fetchMailSlot()</slot>
+    <slot>createNewMailbox( const QString &amp; name )</slot>
+    <slot>saveMailDialogSlot()</slot>
+    <slot>saveMailSlot( const QString &amp; name )</slot>
+    <slot>adressBookSlot()</slot>
+    <slot>refreshComboBoxes()</slot>
+    <slot>headersSlot()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+    <function access="private" specifier="non virtual">destroy()</function>
+    <function access="protected">MailForm()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

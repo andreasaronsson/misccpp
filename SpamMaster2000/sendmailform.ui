@@ -1,0 +1,255 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>sendMailForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>sendMailForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>484</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Spam Your Victims</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout8</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>sendMailButton</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Spam!</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>addrPushButton</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Addr</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>339</width>
+                            <height>41</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>stalinMailPixmapLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>stalin_2.jpg</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="Line">
+            <property name="name">
+                <cstring>line7</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>toRowLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>toTextLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>100</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>To:</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit13</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>toMailLineEdit</cstring>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>subjRowLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>subjectTextLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>100</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Subject:</string>
+                    </property>
+                    <property name="buddy" stdset="0">
+                        <cstring>lineEdit14</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>subjectMailLineEdit</cstring>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTextEdit">
+            <property name="name">
+                <cstring>mailTextEdit</cstring>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>sendMailButton</sender>
+        <signal>clicked()</signal>
+        <receiver>sendMailForm</receiver>
+        <slot>newMailSlot()</slot>
+    </connection>
+    <connection>
+        <sender>addrPushButton</sender>
+        <signal>clicked()</signal>
+        <receiver>sendMailForm</receiver>
+        <slot>addressSlot()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">mail.h</include>
+    <include location="local" impldecl="in declaration">mailbox.h</include>
+    <include location="local" impldecl="in declaration">smtp.h</include>
+    <include location="local" impldecl="in declaration">contact.h</include>
+    <include location="local" impldecl="in declaration">abook.h</include>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="global" impldecl="in implementation">iostream</include>
+    <include location="global" impldecl="in implementation">sstream</include>
+    <include location="local" impldecl="in implementation">qstring.h</include>
+    <include location="local" impldecl="in implementation">mail.h</include>
+    <include location="local" impldecl="in implementation">smtp.h</include>
+    <include location="local" impldecl="in implementation">mailbox.h</include>
+    <include location="local" impldecl="in implementation">string.h</include>
+    <include location="local" impldecl="in implementation">qstringlist.h</include>
+    <include location="local" impldecl="in implementation">qvaluelist.h</include>
+    <include location="local" impldecl="in implementation">contact.h</include>
+    <include location="local" impldecl="in implementation">abook.h</include>
+    <include location="local" impldecl="in implementation">abookform.h</include>
+    <include location="global" impldecl="in implementation">vector</include>
+    <include location="local" impldecl="in implementation">sendmailform.ui.h</include>
+</includes>
+<variables>
+    <variable>Smtp *server;</variable>
+    <variable>Mailbox *boxen;</variable>
+    <variable>QDialog *newAdressBook;</variable>
+</variables>
+<signals>
+    <signal>sendAdressBook(vector&lt;Contact*&gt; &amp;)</signal>
+</signals>
+<slots>
+    <slot>newMailSlot()</slot>
+    <slot>newMailSlot( Mailbox &amp; sentmail, Smtp &amp; smtpserver, vector&lt;Contact *&gt; &amp; abook, QString signature )</slot>
+    <slot>replyMailSlot( Mail &amp; oldmail, Mailbox &amp; sentmail, Smtp &amp; smtpserver, vector&lt;Contact *&gt; &amp; abook )</slot>
+    <slot>forwardMailSlot( Mail &amp; oldmail, Mailbox &amp; sentmail, Smtp &amp; smtpserver, vector&lt;Contact *&gt; &amp; abook )</slot>
+    <slot>addressSlot()</slot>
+    <slot>getAddressSlot( QString address )</slot>
+</slots>
+<functions>
+    <function>sendMail()</function>
+    <function access="private">init()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

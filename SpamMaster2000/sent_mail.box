@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dict>
+<key>Date</key><string>tor, 03 jun 2004 19:29:26 +0200</string>
+<key>Subject</key><string>Hej</string>
+<key>From</key><string>Jaff =3Cjaffpop@skip.informatik.gu.se=3E</string>
+<key>To</key><string>jaffpop@skip.informatik.gu.se</string>
+<key>Body</key><string>då=0A</string>
+<key>Headers</key><string>Return-Path: =3Cjaffpop@skip.informatik.gu.se=3E=0ADelivered-To: jaffpop@skip.informatik.gu.se=0AReceived: (qmail 14562 invoked by uid 204); 3 Jun 2004 19:29:31 +0200=0AReceived: from jaffpop@skip.informatik.gu.se by picard by uid 201 with qmail-scanner-1.16 =0A (. spamassassin: 2.63.  Clear:SA:0(0.0/5.0):. =0A Processed in 5.046914 secs); 03 Jun 2004 17:29:31 -0000=0AX-Spam-Status: No, hits=0.0 required=5.0=0AReceived: from spiff120.informatik.gu.se (HELO spiff120) (130.241.142.225)=0A  by picard.skip.informatik.gu.se with SMTP; 3 Jun 2004 19:29:26 +0200=0AX-Qmail-Scanner-Message-ID: =3C108628376652614534@picard=3E</string>
+</dict>
+<dict>
+<key>Date</key><string>tor, 03 jun 2004 21:21:21 +0200</string>
+<key>Subject</key><string>Subject</string>
+<key>From</key><string>Jaff =3Cjaffpop@skip.informatik.gu.se=3E</string>
+<key>To</key><string>To</string>
+<key>Body</key><string>Body</string>
+<key>Headers</key><string>Headers</string>
+</dict>
+<dict>
+<key>Date</key><string>tor, 03 jun 2004 21:42:13 +0200</string>
+<key>Subject</key><string>Tomt mail</string>
+<key>From</key><string>Jaff =3Cjaffpop@skip.informatik.gu.se=3E</string>
+<key>To</key><string>jaffpop</string>
+<key>Body</key><string></string>
+<key>Headers</key><string></string>
+</dict>
+<dict>
+<key>Date</key><string>tor, 03 jun 2004 23:42:54 +0200</string>
+<key>Subject</key><string></string>
+<key>From</key><string>Jaff =3Cjaffpop@skip.informatik.gu.se=3E</string>
+<key>To</key><string>jaffpop</string>
+<key>Body</key><string>Det här mailet saknar subject=0A/Joakim, Andreas, Franz och Fredrik=0A</string>
+<key>Headers</key><string></string>
+</dict>

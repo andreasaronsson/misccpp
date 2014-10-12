@@ -1,0 +1,266 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>aBookForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>aBookForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>552</width>
+            <height>450</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Addressbook</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout50</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout49</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout48</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>add_contact</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Add contact</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>del_contact</cstring>
+                                    </property>
+                                    <property name="text">
+                                        <string>Delete contact</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer16</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>260</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                        <widget class="Line">
+                            <property name="name">
+                                <cstring>line7</cstring>
+                            </property>
+                            <property name="frameShape">
+                                <enum>HLine</enum>
+                            </property>
+                            <property name="frameShadow">
+                                <enum>Sunken</enum>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout46</cstring>
+                            </property>
+                            <vbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                            </vbox>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>430</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>stalinPixmapLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>70</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="Line">
+            <property name="name">
+                <cstring>line1</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QListView">
+            <column>
+                <property name="text">
+                    <string>Firstname</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>Lastname</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <column>
+                <property name="text">
+                    <string>E-mail address</string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+            <property name="name">
+                <cstring>contactListView</cstring>
+            </property>
+            <property name="resizePolicy">
+                <enum>Manual</enum>
+            </property>
+            <property name="resizeMode">
+                <enum>AllColumns</enum>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>add_contact</sender>
+        <signal>clicked()</signal>
+        <receiver>aBookForm</receiver>
+        <slot>addContactButton()</slot>
+    </connection>
+    <connection>
+        <sender>contactListView</sender>
+        <signal>doubleClicked(QListViewItem*)</signal>
+        <receiver>aBookForm</receiver>
+        <slot>putAddressSlot()</slot>
+    </connection>
+    <connection>
+        <sender>del_contact</sender>
+        <signal>clicked()</signal>
+        <receiver>aBookForm</receiver>
+        <slot>deleteContactSlot()</slot>
+    </connection>
+    <connection>
+        <sender>contactListView</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>aBookForm</receiver>
+        <slot>contactClickedSlot()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">vector</include>
+    <include location="local" impldecl="in declaration">contact.h</include>
+    <include location="local" impldecl="in declaration">abook.h</include>
+    <include location="local" impldecl="in declaration">addcontact.h</include>
+    <include location="local" impldecl="in implementation">contact.h</include>
+    <include location="global" impldecl="in implementation">vector</include>
+    <include location="global" impldecl="in implementation">string</include>
+    <include location="local" impldecl="in implementation">abook.h</include>
+    <include location="global" impldecl="in implementation">iterator</include>
+    <include location="local" impldecl="in implementation">addcontact.h</include>
+    <include location="global" impldecl="in implementation">iostream</include>
+    <include location="local" impldecl="in implementation">abookform.ui.h</include>
+</includes>
+<variables>
+    <variable access="public">QDialog *newCon;</variable>
+</variables>
+<signals>
+    <signal>sendContactDetails(vector&lt;Contact*&gt;&amp;)</signal>
+    <signal>sendAddress(QString)</signal>
+</signals>
+<slots>
+    <slot>addContactButton()</slot>
+    <slot>ListContacts( vector&lt;Contact *&gt; &amp; abook )</slot>
+    <slot>addContactSlot( Contact &amp; newContact )</slot>
+    <slot>deleteContactSlot()</slot>
+    <slot>contactClickedSlot()</slot>
+    <slot>putAddressSlot()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
