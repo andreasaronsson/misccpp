@@ -1,0 +1,302 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>SpecialReportForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SpecialReportForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>350</width>
+            <height>155</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>350</width>
+            <height>155</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>350</width>
+            <height>155</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Special reports</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>makeReport</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>60</x>
+                <y>110</y>
+                <width>140</width>
+                <height>37</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Make report</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>cancel</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>200</x>
+                <y>110</y>
+                <width>138</width>
+                <height>37</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Cancel</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <item>
+            <property name="text">
+                <string>Full report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Month report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Summary report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Tire report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Trail report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Week report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Weekday report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Wheel report</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Year report</string>
+            </property>
+        </item>
+        <property name="name">
+            <cstring>reportList</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>310</width>
+                <height>28</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QWidgetStack">
+        <property name="name">
+            <cstring>reportStack</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>14</x>
+                <y>52</y>
+                <width>320</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>dateInterval</cstring>
+            </property>
+            <attribute name="id">
+                <number>0</number>
+            </attribute>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>160</x>
+                        <y>10</y>
+                        <width>20</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>-</string>
+                </property>
+            </widget>
+            <widget class="QDateEdit">
+                <property name="name">
+                    <cstring>toDate</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>180</x>
+                        <y>10</y>
+                        <width>134</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="order">
+                    <enum>YMD</enum>
+                </property>
+                <property name="date">
+                    <date>
+                        <year>2000</year>
+                        <month>1</month>
+                        <day>1</day>
+                    </date>
+                </property>
+            </widget>
+            <widget class="QDateEdit">
+                <property name="name">
+                    <cstring>fromDate</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>134</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="order">
+                    <enum>YMD</enum>
+                </property>
+                <property name="date">
+                    <date>
+                        <year>2000</year>
+                        <month>1</month>
+                        <day>1</day>
+                    </date>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>yearInput</cstring>
+            </property>
+            <attribute name="id">
+                <number>1</number>
+            </attribute>
+            <widget class="QSpinBox">
+                <property name="name">
+                    <cstring>yearBox</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>70</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="maxValue">
+                    <number>3000</number>
+                </property>
+                <property name="minValue">
+                    <number>1900</number>
+                </property>
+                <property name="value">
+                    <number>2004</number>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>empty</cstring>
+            </property>
+            <attribute name="id">
+                <number>2</number>
+            </attribute>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>reportList</sender>
+        <signal>activated(int)</signal>
+        <receiver>SpecialReportForm</receiver>
+        <slot>changeReport()</slot>
+    </connection>
+    <connection>
+        <sender>cancel</sender>
+        <signal>clicked()</signal>
+        <receiver>SpecialReportForm</receiver>
+        <slot>killBill()</slot>
+    </connection>
+    <connection>
+        <sender>fromDate</sender>
+        <signal>valueChanged(const QDate&amp;)</signal>
+        <receiver>SpecialReportForm</receiver>
+        <slot>checkFromDate()</slot>
+    </connection>
+    <connection>
+        <sender>toDate</sender>
+        <signal>valueChanged(const QDate&amp;)</signal>
+        <receiver>SpecialReportForm</receiver>
+        <slot>checkToDate()</slot>
+    </connection>
+    <connection>
+        <sender>makeReport</sender>
+        <signal>clicked()</signal>
+        <receiver>SpecialReportForm</receiver>
+        <slot>createReport()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">qdatetime.h</include>
+    <include location="local" impldecl="in declaration">reportdisplay.h</include>
+    <include location="global" impldecl="in declaration">qmessagebox.h</include>
+    <include location="local" impldecl="in declaration">Report.h</include>
+    <include location="local" impldecl="in declaration">Preferences.h</include>
+    <include location="local" impldecl="in implementation">specialreportform.ui.h</include>
+</includes>
+<slots>
+    <slot>changeReport()</slot>
+    <slot>createReport()</slot>
+    <slot>checkFromDate()</slot>
+    <slot>checkToDate()</slot>
+    <slot>killBill()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+</functions>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

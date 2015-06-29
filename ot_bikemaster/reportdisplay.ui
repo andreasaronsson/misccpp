@@ -1,0 +1,160 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>ReportDisplay</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>ReportDisplay</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>700</width>
+            <height>858</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>100</width>
+            <height>100</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>3500</width>
+            <height>3500</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>700</width>
+            <height>500</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Report</string>
+    </property>
+    <property name="iconText">
+        <string></string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>ButtonLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>SaveButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Save</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+S</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>361</width>
+                            <height>70</height>
+                        </size>
+                    </property>
+                </spacer>
+            </hbox>
+        </widget>
+        <widget class="QTextEdit">
+            <property name="name">
+                <cstring>ReportText</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>3500</width>
+                    <height>3500</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Monospace</family>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="lineWidth">
+                <number>2</number>
+            </property>
+            <property name="resizePolicy">
+                <enum>Manual</enum>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="wordWrap">
+                <enum>NoWrap</enum>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>SaveButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ReportDisplay</receiver>
+        <slot>saveReportSlot()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in declaration">qapplication.h</include>
+    <include location="local" impldecl="in declaration">qfile.h</include>
+    <include location="global" impldecl="in declaration">iostream</include>
+    <include location="local" impldecl="in declaration">qfiledialog.h</include>
+    <include location="local" impldecl="in implementation">reportdisplay.ui.h</include>
+</includes>
+<variables>
+    <variable>QString suggestName;</variable>
+</variables>
+<slots>
+    <slot>writeReport( QString &amp; report, QString &amp; name )</slot>
+    <slot>saveReportSlot()</slot>
+</slots>
+<functions>
+    <function access="private" specifier="non virtual">init()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
